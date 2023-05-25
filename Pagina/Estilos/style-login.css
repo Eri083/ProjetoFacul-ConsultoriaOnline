@@ -1,0 +1,162 @@
+/* Esse código "@import" está importando uma font do Google Fonts para o CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Raleway:wght@100&family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap');
+
+/* Aqui estou alterando a tag Body do HTML */
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+}
+
+/* o "*" após o body significa que qualquer estilo ali dentro vai funcionar em todos elementos dentro da tag <body> */
+
+body * {
+    box-sizing: border-box;
+}
+
+/* Aqui estou criando o estilo para a classe "main-login" que é o conteiner principal a TAG que está guardando todas as outras tags. */
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #2C3E40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* esses valores são baseados na viewport (tela). Por exemplo, se a viewport é de 100 o 50vw está usando 50% da tela. No VH a lógica é a mesma, porém é usado no height */
+/* o "flex-direction: column" nessa situação eu usei para forçar os itens dentro dessa DIV ficarem um abaixo do outro C: */
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: #FFFFE0;
+}
+
+.left-login-image {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Aqui o card se formou e declarei sua cor, tamanho, quanto espaço da div usa a direção usando o display, justify-content. */
+/* Também usei uma sombra com o "box-shadom" os valores são "O primeiro se refere ao "X" o segundo a "altura (valor negativa a sombra vai para cima e valor positivo a sombra vai para baixo) o terceiro valor é o "efeito de blur" o quarto valor é "cor da sombra". */
+/* "border-radius" ele "arredonda" a borda. Quanto maior o valor mais arredondada fica a borda. Não sei explicar direito, vale mais a pena testar C:*/
+
+.card-login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #325558;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #FFFFE0;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-field {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-field > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #427d83;
+    color: rgb(248, 240, 240);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field > label {
+    color: rgb(248, 240, 240);
+    margin-bottom: 10px;
+}
+
+.text-field > input::placeholder {
+    color:rgb(255, 255, 255)
+}
+
+.buttom-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin-right: 80px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:#2C3E40;
+    background: #FFFFE0;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #223133;
+}
+
+/* Estas configurações abaixo deixam a página responsiva para telas menores, como mobile, por exemplo. */
+/* Para quem tiver mais duvidas, usei as informações deste site: https://www.devmedia.com.br/responsive-design-dicas-para-tornar-seu-site-acessivel-em-qualquer-resolucao/28316 */
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.left-login-image {
+    width: 50vh;
+}
+
+.card-login {
+    width: 90%;
+}
