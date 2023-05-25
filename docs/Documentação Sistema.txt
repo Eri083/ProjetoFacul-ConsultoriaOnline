@@ -1,0 +1,10 @@
+Criação do grupo e definição do tema
+Criação da Página de Login em HTML & CSS
+•	Introdução
+O Projeto consiste na criação de um sistema Web voltado a parte de consultorias online com Personal Trainer, 
+o cliente poderá agendar consultoria presencial ou online.
+•	Descrição geral do sistema
+O Sistema terá a função de cadastro e acesso de alunos, acompanhamento com o Personal Trainer, pagina com dicas de treino, 
+valores de consultoria, dicas de nutricionistas.
+
+
