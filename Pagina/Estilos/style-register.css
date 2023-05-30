@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Raleway:wght@100&family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+    background: #2C3E40;
+}
+
+/* Explicação dos codigos no CSS da pagina de Login, lá expliquei a maioria dos codigos novos que aprendi com pesquisa! */
+body * {
+    box-sizing: border-box;
+}
+
+.main-singup {
+    width: 100vw;
+    height: 100vh;
+    background: #2C3E40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-singup {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-singup > h1 {
+    color: #FFFFE0;
+}
+
+.left-singup-image {
+    width: 55vw;
+}
+
+.right-singup {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-singup {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #325558;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-singup > h1 {
+    color: #FFFFE0;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-field {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-field > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #427d83;
+    color: rgb(248, 240, 240);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field > label {
+    color: rgb(248, 240, 240);
+    margin-bottom: 10px;
+}
+
+.text-field > input::placeholder {
+    color:rgb(255, 255, 255)
+}
+
+.buttom-singup {
+    width: 100%;
+    padding: 16px 0px;
+    margin-right: 80px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:#2C3E40;
+    background: #FFFFE0;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #223133;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-singup {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-singup {
+        flex-direction: column;
+    }
+
+    .left-singup > h1 {
+        display: none;
+    }
+
+    .left-singup {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-singup {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
