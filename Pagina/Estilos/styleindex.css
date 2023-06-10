@@ -1,31 +1,31 @@
 body {
-    margin: 0;
-    width: auto;
-    font-family: 'Nunito', 'Courier New', Courier, monospace;
+    margin: auto;
     background-color: white;
-
-      
+    width: auto;
 }
 
 
+/* Define as caracteristicas do nome Leandro Macedo no topo */
 .secao-topo h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 70px;
-    margin-top: auto;
     letter-spacing: 10px;
     color: #465547;
     text-shadow: 2px 10px 10px #465547, 0 0 1px;
+    margin-bottom: auto;
      
 }
 
+/* Aqui define todos os paragrafos */
 p {
 font-size: 15px;
 flex-direction: column-reverse;
 display: flex; 
 }
 
-#paragrafo-topo {
+/* Aqui define apenas o h3 na seção do topo */
+#subtitulo-topo {
     text-shadow: 2px 5px 8px #465547, 0 0 1px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -37,7 +37,7 @@ display: flex;
 
 }
 
-
+/* Define as caracteristicas do botão "Ver Planos" */
 #ButtomPlanos {
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -53,13 +53,9 @@ display: flex;
     line-height: 100px;
     transition: all 0.3s ease-out;
 
-    
-
 }
 #ButtomPlanos:hover {
-    background: orangered;
-    
-    
+    background: orangered;   
 }
 
 #secaotopo {
@@ -68,12 +64,10 @@ display: flex;
     font-size: 20px;
     line-height: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 64px;
-    
-    
+    margin-top: 64px;   
 }
 
-
+/* Define as caracteristicas envolvidas na seção de informações */
 .informacoes {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -81,12 +75,11 @@ display: flex;
     margin-bottom: 15px;
     letter-spacing: 2px;
     color: black;
-
-    
     
 }
 
-.buttonClass{
+/* Define as caracteristicas dos botões do menu */
+.menuClass a{
     font-size: 21px;
     font-family: Arial;
     width: 140px;
@@ -98,60 +91,13 @@ display: flex;
     border-radius: 28px;
     background:#3EB489;
     padding: 8px 70px;
-    margin: 22px 0px 0px 10px;
-    margin-top: 20px;
+    margin: 22px 1px 2px 15px;
     text-decoration: none;
     text-shadow: 2px 5px 8px #465547, 0 0 1px;
 
 }
-.buttonClass:hover {
+.menuClass a:hover {
     background: orangered;
-}
-
-
-/* Aqui define a cor e fonte das palavras especificas em laranja */
-#orange {
-    color: orangered;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-/* Aqui define a seção da pagina "Como funciona?" */
-.secao4 {
-    background-color: black;
-    color: rgba(128, 128, 128, 0.979);
-    line-height: 28px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 28px;
-
-    width: auto;
-
-   
-}
-
-/* direciona a area de login para o canto superior direito da pg */
-.right-login{
-    text-align: right;
-
-}
-
-/* Define algumas caracteristicas dos links */
-#links {
-    font-size: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-
-}
-
-#users {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-
 }
 
 /*Define as caracteristicas dos botões login e senha */
@@ -176,38 +122,63 @@ display: flex;
     background: linear-gradient(#dfdfdf, #ededed);
 }
 
-/*
-#direitos {
-    background-color: black;
-    color: rgba(128, 128, 128, 0.979);
-    line-height: 28px;
-    display: block;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* Aqui define a cor e fonte das palavras especificas em laranja */
+#orange {
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Define as caracteristicas dos inputs, diminuindo o tamanho do mesmo */
-#inputs {
-        text-align: left;
-        margin-bottom: 2px;
-        width: 90px;
-    }
 
+
+/* Aqui define a seção da pagina "Como funciona?" */
+.secao4 {
+    background-color: black;
+    color: rgba(128, 128, 128, 0.979);
+    line-height: 25px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 28px;
+    
+}
+
+/* direciona a area de login para o canto superior direito da pg */
+.right-login{
+    text-align: right;
+
+}
+
+/* Define as caracteristicas de todos os span */
+span {
+    color: black;
+    line-height: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
 
 #antiquewhite {
     color: antiquewhite;
+    
 }
 
-
+/* Define as caracteristicas de todos h3 */
 h3 {
     font-size: 30px;
     margin: 40px;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: orangered;
-    
-    
+   
 }
+
+
 
 /* Define as caracteristicas das listas não ordenadas e os itens da mesma */
 li, ul {
@@ -227,16 +198,15 @@ li, ul {
     text-align: center;
     text-shadow: 2px 5px 8px #465547, 0 0 1px;
 }
-.valor-planos {
-    background-color: white;
-}
+
 
 /* Define as caracteristicas do Plano1 dos itens da lista, linha 118 */
 #plano1 {
     width: 25%;
     height: 150px;
     display: inline-block;
-    margin-left: 160px;
+    margin-left: 150px;
+    text-align: center;
 
 }
 /* Define as caracteristicas do Plano2 dos itens da lista, linha 133 */
@@ -245,6 +215,7 @@ li, ul {
     height: 200px;
     display: inline-block;
     background-color: orangered;
+    text-align: center;
    
 }
 
@@ -262,6 +233,7 @@ li, ul {
     height: 150px;
     display: inline-block;
     margin-left: 50px;
+    text-align: center;
 }
 
 /* Define as caracteristicas das img em geral */
