@@ -1,0 +1,96 @@
+@import url('https://fonts. googleapis.com/css2?family= Nunito:ital,wght@0,200;1,200& family=Raleway:wght@100& family=Roboto:wght@100&family= Ubuntu:wght@300; 400&display= trocar');
+ 
+ :root{
+    --cor-primaria: #2C3E40;
+    --cor-secundaria: #325558;
+ }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: aliceblue ;
+}
+body {
+    background-color: var(--cor-primaria);
+
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+}
+main{
+    width: 100vh;
+}
+.container{
+   width: 100%;
+   margin: 3em 10em;
+}
+.agendamento{
+    width: 100%;
+}
+.container__agendamento{
+    margin: 1rem 0px;
+}
+.agendamento > h4{
+    font-family: 'Nunito', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    padding: 1.3em;
+}
+.dadosdr{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    color:aliceblue ;
+    margin-bottom: 1.5em;
+}
+.dadosdr > p{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: rgb(190, 196, 202);
+}
+.agenda{
+    padding: 1em 0px;
+    display: flex;
+    align-items: flex-end;
+}
+.dias{
+    display: flex;
+    gap: 15.2rem;
+    margin-bottom: 1rem;
+}
+.tabela{
+    display: flex;
+    gap: 5.3em;
+    align-items: flex-start;
+    margin: 1rem 0px;
+}
+
+.tabela > p:nth-child(2){
+    width: 75px;
+    text-align: left;
+}
+
+.btn > button{
+    height: 40px;
+    width: 60px;
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 0.3rem;
+    margin: 0.7rem 0.8rem;
+}
+
+button:hover{
+    color: aliceblue;
+    background-color: #5f6a6a;
+    cursor: pointer;
+}
+
+hr{
+    width: 1210px;
+}
