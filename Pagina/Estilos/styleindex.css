@@ -1,8 +1,23 @@
 body {
-    margin: auto;
+    margin: 0;
     background-color: #e6e6e6;
     width: auto;
 } 
+
+sub {
+    text-align: center;
+    color: orangered;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 80vh;
+    text-shadow: 2px 5px 8px #465547, 0 0 1px;
+    border-width:1px;
+    letter-spacing: 1vh;
+}
+    
+
 
 /* Define as caracteristicas do nome Leandro Macedo no topo */
 .secao-topo h1 {
@@ -29,6 +44,7 @@ display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 22px;
+    font-style: italic;
     letter-spacing: 5px;
     color: orangered;
     font-weight: bold;
@@ -52,6 +68,7 @@ display: flex;
     text-decoration: none;
     line-height: 100px;
     transition: all 0.3s ease-out;
+    text-shadow: 2px 5px 8px #000700, 0 0 1px;
 
 }
 #ButtomPlanos:hover {
@@ -69,6 +86,7 @@ display: flex;
     
 }
 
+
 /* Define as caracteristicas dos botões do menu */
 .menuClass a{
     font-size: 21px;
@@ -84,7 +102,7 @@ display: flex;
     padding: 8px 70px;
     margin: 22px 1px 2px 15px;
     text-decoration: none;
-    text-shadow: 2px 5px 8px #465547, 0 0 1px;
+    text-shadow: 2px 5px 8px #000700, 0 0 1px;
 
 }
 .menuClass a:hover {
@@ -107,6 +125,7 @@ display: flex;
     box-shadow:inset 0px 1px 0px 0px #ffffff;
     text-shadow:inset 0px -5px 0px #ffffff;
     background:linear-gradient(#ededed, #dfdfdf);
+    text-decoration: none;
 }
 
 .buttom-login:hover {
@@ -234,11 +253,11 @@ img{
     margin-bottom: 5px 10 5 10;
 }
 
-/* Definição dos botões de assinatura através do site https://www.bestcssbuttongenerator.com */
+/* Definição dos botões através do site https://www.bestcssbuttongenerator.com */
 #pag-assinatura {
-    box-shadow: 4px 5px 11px 1px #8a2a21;
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color:#c62d1f;
+    box-shadow: 4px 5px 11px 1px #f51804;
+	background:linear-gradient(to bottom, #db2211 5%, #eb1b0c 100%);
+	background-color:#e01f0d;
 	border-radius:42px;
 	display:inline-block;
 	cursor:pointer;
