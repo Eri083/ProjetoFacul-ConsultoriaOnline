@@ -1,9 +1,8 @@
 body {
     margin: auto;
-    background-color: white;
+    background-color: #e6e6e6;
     width: auto;
-}
-
+} 
 
 /* Define as caracteristicas do nome Leandro Macedo no topo */
 .secao-topo h1 {
@@ -33,6 +32,7 @@ display: flex;
     letter-spacing: 5px;
     color: orangered;
     font-weight: bold;
+    background-color: #e6e6e6;
     
 
 }
@@ -47,7 +47,7 @@ display: flex;
     font-weight: bold;
     border-radius: 28px;
     text-shadow: 1px 1px 0px #20241f;
-    background:#3EB489;
+    background: orangered;
     padding: 8px 18px;
     text-decoration: none;
     line-height: 100px;
@@ -55,16 +55,7 @@ display: flex;
 
 }
 #ButtomPlanos:hover {
-    background: orangered;   
-}
-
-#secaotopo {
-    text-align: center;
-    color: orangered;
-    font-size: 20px;
-    line-height: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 64px;   
+    background: black;   
 }
 
 /* Define as caracteristicas envolvidas na seção de informações */
@@ -89,7 +80,7 @@ display: flex;
     border-color:#18ab29;
     font-weight: bold;
     border-radius: 28px;
-    background:#3EB489;
+    background:orangered;
     padding: 8px 70px;
     margin: 22px 1px 2px 15px;
     text-decoration: none;
@@ -97,7 +88,7 @@ display: flex;
 
 }
 .menuClass a:hover {
-    background: orangered;
+    background: black;
 }
 
 /*Define as caracteristicas dos botões login e senha */
@@ -241,4 +232,29 @@ img{
     width: 60px;
     padding: 20px;
     margin-bottom: 5px 10 5 10;
+}
+
+/* Definição dos botões de assinatura através do site https://www.bestcssbuttongenerator.com */
+#pag-assinatura {
+    box-shadow: 4px 5px 11px 1px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:3px 19px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #810e05;
+}
+#pag-assinatura:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+#pag-assinatura:active {
+	position:relative;
+	top:1px;
 }
