@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Raleway:wght@100&family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: orangered;
+}
+
+header{
+    text-align: center;
+    font-size: 45px;
+    color: #FFFFE0;
+    border-bottom: 4px solid #FFFFE0;
+}
+
+div{
+    width: 70%;
+    max-width: 800px;
+}
+
+div details{
+    font-size: 30px;
+    color: #FFFFE0;
+}
+
+div details summary{
+    background-color: rgb(255, 68, 0);
+    padding: 2%;
+}
+
+div details p{
+    background-color: #FFFFE0;
+    padding: 2%;
+    transition: all .5s;
+    color: orangered
+}
+
+p{
+    font-size: 25px;;
+}
